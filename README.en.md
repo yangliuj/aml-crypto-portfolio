@@ -17,7 +17,7 @@ pip install -U duckdb pandas
 python scripts\run_kyt.py
 # evidence pages -> reports\STR_cases\
 
-Three audit-friendly, reproducible mini projects without heavy backend:
+## Three audit-friendly, reproducible mini projects without heavy backend:
 1) **KYT Rules & Casebook (SQL-first)**
 2) **Travel Rule Pre-check (JSON Schema + Postman)**
 3) **Audit Replay Prototype (Notebook)**
