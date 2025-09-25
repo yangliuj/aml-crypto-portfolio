@@ -1,0 +1,66 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "IVMS101 Minimal Fields",
+  "type": "object",
+  "required": [
+    "originator",
+    "beneficiary",
+    "vasp_from",
+    "vasp_to",
+    "asset",
+    "amount",
+    "tx_purpose"
+  ],
+  "properties": {
+    "vasp_from": {
+      "type": "string"
+    },
+    "vasp_to": {
+      "type": "string"
+    },
+    "asset": {
+      "type": "string"
+    },
+    "amount": {
+      "type": "number",
+      "minimum": 0
+    },
+    "tx_purpose": {
+      "type": "string"
+    },
+    "originator": {
+      "type": "object",
+      "required": [
+        "name",
+        "country"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 2
+        }
+      }
+    },
+    "beneficiary": {
+      "type": "object",
+      "required": [
+        "name",
+        "country"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string",
+          "minLength": 2,
+          "maxLength": 2
+        }
+      }
+    }
+  }
+}

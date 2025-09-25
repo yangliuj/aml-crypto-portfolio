@@ -1,0 +1,5 @@
+address,tag_type,source,confidence
+0xSAN1,SANCTIONS,internal,0.95
+0xMXR,MIXER,internal,0.90
+0xBR1,BRIDGE,internal,0.85
+0xZ1,VASP,internal,0.70

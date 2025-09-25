@@ -1,0 +1,36 @@
+{
+  "info": {
+    "name": "Travel Rule Minimal Check",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Pre-Transfer Validate",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "https://example.com/travel-rule/validate",
+          "protocol": "https",
+          "host": [
+            "example",
+            "com"
+          ],
+          "path": [
+            "travel-rule",
+            "validate"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"vasp_from\": \"VASP_A\",\n  \"vasp_to\": \"VASP_B\",\n  \"asset\": \"USDT-ETH\",\n  \"amount\": 1000,\n  \"tx_purpose\": \"Customer withdrawal\",\n  \"originator\": {\n    \"name\": \"Zhang\",\n    \"country\": \"DE\"\n  },\n  \"beneficiary\": {\n    \"name\": \"Li\",\n    \"country\": \"NL\"\n  }\n}"
+        }
+      }
+    }
+  ]
+}
